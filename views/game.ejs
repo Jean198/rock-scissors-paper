@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/index.js"></script>
+
+    <script>
+        window.onload =function(){
+            let playerName = document.cookie.split('separator')[1]
+            document.getElementById('playerName').innerHTML=playerName.toUpperCase()
+            document.getElementById('boxplayername').innerHTML=playerName.toUpperCase()
+
+        }
+
+    </script>
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <div >
+            
+            <p>Welcome <span id="playerName"> </span>!</p>
+            
+        </div>
+
+        <div id="body">
+
+        </div>
+        <div class="score-board">
+            <div class="tietokone">
+                <p>TIETOKONE</p>
+                <h1 id="tietokone">0</h1>
+            </div>
+            <div class="round">
+                <p>ROUND</p>
+                <h1 id="round">0</h1>
+            </div>
+            <div class="score">
+                <p id="boxplayername"></p>
+                <h1 id="score">0</h1>
+            </div>
+
+            
+
+        </div>
+
+        <div class="contest">
+            <div class="contest-divs computerHand">
+                <h1>THE COMPUTER CHOICE</h1>
+                 <div class="handImageContainer " >
+                     <img id="computerPickImage"src="images/question.png" alt="">
+                 </div>
+            </div>
+            
+            
+            <div class="contest-divs referee">
+                <div class="decision">  
+                    <h1 id="decision">Decision</h1> 
+                    <img id="decisionImg"src="images/question.png" alt="">
+                </div>
+                
+            </div>
+
+            <div class="contest-divs userHand">
+                <h1>YOUR CHOICE</h1>
+                <div class="handImageContainer">
+                    <img id="userPickImage"src="images/question.png" alt="">
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div id="make-choice"> <h1>Make your choice</h1></div>
+
+        <div class="hands">
+            <div class="hand paper" onclick="pickPlayerChoice('Paper')">
+                <img src="images/Paper.png" alt="">
+            </div>
+            <div class="hand scissors" onclick="pickPlayerChoice('Scissors')">
+                 <img src="images/Scissors.png" alt="">
+            </div>
+            <div class="hand rock" onclick="pickPlayerChoice('Rock')">
+                <img src="images/Rock.png" alt="">
+            </div>
+            
+
+        </div>
+
+        
+       
+
+        <div>
+            <div class="reset" onclick="resetGame()"> RESET GAME</div>
+            <div class="logout" onclick=""> <a href="/">Logout</a> </div>
+        </div>
+
+    </div>
+
+    
+
+    
+    
+
+    
+</body>
+</html>

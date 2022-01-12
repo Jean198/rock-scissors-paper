@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: "Nunito";
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #0F8072 ;
+    background-image: linear-gradient(315deg, #0F8072 0%, #002231 74%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    
+    
+
+}
+
+
+.index a{
+   color: yellow
+}
+
+.score-board{
+
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.title{
+    margin-left: 30px;
+}
+
+.score{
+    width: 100px;
+    height: 80px;
+    border: solid 1px white;
+    color: #002231;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.score p{
+    color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.score h1{
+    color:#00BC90;
+    font-size: 50px;
+}
+
+.round{
+
+    width: 100px;
+    height: 80px;
+    border: solid 1px white;
+    color: #002231;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.round p{
+    color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.round h1{
+    color:white;
+    font-size: 50px;
+}
+
+.tietokone{
+    width: 100px;
+    height: 80px;
+    border: solid 1px white;
+    color: #002231;
+    border-radius: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 20px;
+
+}
+
+.tietokone p{
+
+    color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+
+}
+
+.tietokone h1{
+    color:red;
+    font-size: 50px;
+}
+
+
+
+/* HANDS SECTION-----------------------------------------------------------------------------------------------*/
+
+.hands{
+    
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+.hands .hand{
+    cursor: pointer;
+    transition: 0.5s;
+    border: solid 1px white;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.hands .hand:hover{
+    transform: translate3d(0px, 8px, 0px);
+}
+
+.hands img{
+    width:100px;
+    height:100px;
+}
+
+.paper{
+    background-color: blue;
+}
+
+.scissors{
+    background-color: yellow;
+}
+.rock{
+
+    background-color: green;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+.contest{
+    width: 900px;
+    border:solid 1px white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+.contest > div{
+    flex: 1;
+}
+
+.contest h1{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contest .handImageContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.contest img{
+    width:100px;
+    height:100px
+}
+
+.contest-divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#computerPickImage{
+    
+    background-color: red;
+    border-radius: 50%;
+}
+
+#userPickImage{
+    background-color: green;
+    border-radius: 50%;
+}
+
+.referee{
+ color: black;
+}
+
+.newGame{
+    color:black;
+    background-color: yellow;
+    border: solid 1px;
+    padding: 5px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.newGame:hover{
+    transform:translate3d(0px, 2px, 0px)
+}
+
+.back-button{
+    color:red;
+    background-color: green;
+    border: solid 1px;
+    padding: 3px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    
+
+}
+
+.submit-btn{
+    color:white;
+    background-color: green;
+    border: solid 1px;
+    padding: 5px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 30px;
+
+}
+
+.reset{
+    color:white;
+    background-color: green;
+    border: solid 1px;
+    padding: 5px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+
+.logout{
+    color:white;
+    background-color: green;
+    border: solid 1px;
+    padding: 5px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.logout a{
+    text-decoration: none;
+    color: red;
+}
+
+.reset:hover{
+    transform:translate3d(0px, 2px, 0px)
+}
+
+
+.decision h1{
+    
+    border-radius: 5px;
+    padding:5px 10px;
+    border: solid 1px;
+}
+
+.counter{
+    border:solid 1px white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: none;
+    margin-top: 100px;
+}
+
+.win{
+    color:green;
+    background-color: white;
+    border: solid 1px; 
+    border-radius: 5px;
+    padding:5px 10px;
+    
+}
+
+.lose{
+    color:red;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+
+.tie{
+
+    color:blue;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:5px 10px;
+
+}
+
+.waiting{
+
+    color:blue;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:5px 10px;
+
+}
+
+
+
+#make-choice{
+    font-size: 15px;
+}
+
+#playerName{
+    color: #FFA500;
+}
