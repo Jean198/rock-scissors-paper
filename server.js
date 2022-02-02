@@ -41,8 +41,8 @@ const connection= async ()=>{
 
 
 
-  app.get("/", (req, res) => {
-    res.render("index");
+  app.get("/", (req, res) => {   
+    res.render("game");  // IF I want to add the login functionalities I will change this line to add (index)
   })
 
   app.get("/login", (req, res) => {
